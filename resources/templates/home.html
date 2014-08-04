@@ -1,0 +1,13 @@
+{% extends "templates/base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>Welcome to CBaaS</h1>
+    <p>- Cheer up a friend by cute bombing them!</p>
+ </div>
+
+  <div class="row-fluid">
+    <div class="span8">
+    {{content|safe}}
+    </div>
+  </div>
+{% endblock %}
