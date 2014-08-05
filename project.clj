@@ -12,7 +12,9 @@
                  [im.chit/cronj "1.0.1"]
                  [noir-exception "0.2.2"]
                  [org.clojure/data.json "0.2.5"]
-                 [clj-http "0.9.2"]]
+                 [clj-http "0.9.2"]
+                 [quit-yo-jibber "0.6.0"]
+                 [com.google.android.gcm/gcm-server "1.0.2"]]
 
   :repl-options {:init-ns cbaas.repl}
   :jvm-opts ["-server"]
@@ -32,4 +34,5 @@
          :injections [(require 'pjstadig.humane-test-output)
                       (pjstadig.humane-test-output/activate!)]
          :env {:dev true}}}
-  :min-lein-version "2.0.0")
+  :min-lein-version "2.0.0"
+  :repositories [["google" "https://github.com/slorber/gcm-server-repository/raw/master/releases"]])

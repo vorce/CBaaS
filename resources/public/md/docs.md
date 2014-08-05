@@ -12,10 +12,10 @@ Gets the url to a random cute animal picture.
     curl http://localhost:3000/cutebomb-url
     {"cute-bomb":"http:\/\/i.imgur.com\/2Wqq0nV.jpg"}
 
-### GET /cutebomb/{keywords}
+### POST /bomb
 
-TODO
+#### Payload: Json containing target user and sender id
 
-Get a random cute animal picture in that is tagged with at least one of the provided keywords
+TODO!
 
-Ex: /cutebomb/otter,turtle
+Ex: `{"user": "foobar", "sender": "bazman123"}`
